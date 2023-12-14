@@ -14,3 +14,16 @@
 h2 {
   font-weight: 700 !important;
 }
+.intro-section {
+  background: url('/src/Components/Images/intro-image.jpg');
+  height: 720px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro-section .container {
+  padding-top: 15%;
+}
+.intro-section h1 {
+  font-size: 4rem;
+}
