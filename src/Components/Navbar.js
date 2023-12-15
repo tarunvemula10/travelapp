@@ -2,20 +2,24 @@ import {React, useState} from "react";
 
 export default function Navbar() {
 
-     const [color, setColor] = useState(false);
+     const [scroll, updateScroll] = useState(false);
+     const [clickState, updateClickState] = useState(false);
+
+     const [navColor, updateNavColor] = useState('bg-transparent');
      const [textColor, updateTextColor] = useState('text-light');
      const [borderColor, updateBorderColor] = useState('border-light');
      const [buttonColor, updateButtonColor] = useState('btn-outline-light');
-     const [clickState, updateClickState] = useState(false);
      
      window.addEventListener('scroll', function() {
           if(window.scrollY>=50) {
-               setColor(true);
+               updateScroll(true);
+               updateNavColor('bg-white');
                updateTextColor('text-dark');
                updateBorderColor('border-dark');
                updateButtonColor('btn-outline-dark');
           } else {
-               setColor(false);
+               updateScroll(false);
+               updateNavColor('bg-transparent');
                updateTextColor('text-light');
                updateBorderColor('border-light');
                updateButtonColor('btn-outline-light');
@@ -23,16 +27,20 @@ export default function Navbar() {
      });
 
      const handleClick = ()=> {
-          if(!clickState) {
-               updateClickState(true);
-               updateTextColor('text-dark');
-               updateBorderColor('border-dark');
-               updateButtonColor('btn-outline-dark');
-          } else if(clickState && !color) {
-               updateClickState(false);
-               updateTextColor('text-light');
-               updateBorderColor('border-light');
-               updateButtonColor('btn-outline-light');
+          if(!scroll) {
+               if(!clickState) {
+                    updateClickState(true);
+                    updateNavColor('bg-light');
+                    updateTextColor('text-dark');
+                    updateBorderColor('border-dark');
+                    updateButtonColor('btn-outline-dark');
+               } else {
+                    updateClickState(false);
+                    updateNavColor('bg-transparent');
+                    updateTextColor('text-light');
+                    updateBorderColor('border-light');
+                    updateButtonColor('btn-outline-light');
+               }
           }
      }
      
@@ -40,7 +48,7 @@ export default function Navbar() {
 
 
      return (
-     <header className={`fixed-top ${color || clickState ? `bg-light` : `bg-transparent`}`}>
+     <header className={`fixed-top ${navColor}`}>
           <nav className="navbar navbar-expand-lg container">
                <div className="container-fluid">
                     <a className={`navbar-brand mt-2 ${textColor}`} href="/">
@@ -69,7 +77,7 @@ export default function Navbar() {
                          </ul>
                     </div>
                     <div className="collapse navbar-collapse justify-content-end" id='book-button'>
-                         <button type="button" className={`btn ${buttonColor}`}>Book your Adventure</button>
+                         <button type="button" className={`btn ${buttonColor} border-2`}>Book your Adventure</button>
                     </div>
                </div>
           </nav>

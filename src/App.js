@@ -1,14 +1,12 @@
 import './App.css';
 import Navbar from './Components/Navbar';
-import Intro from './Components/Intro';
-import Coversection from './Components/Coversection';
+import Home from './Components/Home/Home';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Intro/>
-      <Coversection />
+      <Home/>
     </>
   );
 }
