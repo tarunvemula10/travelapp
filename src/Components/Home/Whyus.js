@@ -5,7 +5,7 @@ import cardImage3 from './Images/card-3.svg'
 
 export default function Whyus() {
      return (
-     <section className='why-us bg-secondary-subtle'>
+     <section className='why-us'>
           <div className="text-center pt-5">
                <p className='text-secondary'><small>3 STEPS TO THE PERFECT TRIP</small></p>
                <h3><b>FIND TRAVEL PERFECTION, WITH THE <br />WISDOM OF EXPERTS</b></h3>
@@ -36,7 +36,7 @@ export default function Whyus() {
                          <img src={cardImage3} alt="" className='mx-auto d-block' height='250px' />
                          <div className="mt-2 text-center">
                               <p className='text-secondary'><b>We'll give you tailored recommendations</b></p>
-                              <p className='text-secondary'>Once you're happy with your final plan, we <br />handle everything for you</p>
+                              <p className='text-secondary'>Once you're happy with your final plan, <br />we handle everything for you</p>
                          </div>
                     </div>
                </div>

@@ -13,7 +13,7 @@ export default function Navbar() {
      window.addEventListener('scroll', function() {
           if(window.scrollY>=50) {
                updateScroll(true);
-               updateNavColor('bg-white');
+               updateNavColor('bg-body-tertiary');
                updateTextColor('text-dark');
                updateBorderColor('border-dark');
                updateButtonColor('btn-outline-dark');
@@ -30,7 +30,7 @@ export default function Navbar() {
           if(!scroll) {
                if(!clickState) {
                     updateClickState(true);
-                    updateNavColor('bg-light');
+                    updateNavColor('bg-body-tertiary');
                     updateTextColor('text-dark');
                     updateBorderColor('border-dark');
                     updateButtonColor('btn-outline-dark');
