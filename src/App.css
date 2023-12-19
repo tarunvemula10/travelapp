@@ -32,11 +32,15 @@ h2 {
   margin: 1.5rem auto;
   border-radius: 20px;
 }
-.why-us small{
+.why-us small, .blog-post .heading small {
   letter-spacing: .5rem;
 }
-.why-us h3 {
+.why-us h3, .blog-post h3 {
   letter-spacing: .3rem;
+}
+.blog-post .row img {
+  width: 100%;
+  min-height: 100px;
 }
 @media (max-width: 950px) {
   .intro-section .container {
@@ -52,4 +56,17 @@ h2 {
   .intro-section .container {
     padding-top: 55%;
   }
+}
+.carousel-cell {
+  width: 28%;
+  height: 300px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  background-position: center center;
+  background-size: cover;
+}
+.blog-post .head-card {
+  width: 80%;
+  margin: auto;
 }
