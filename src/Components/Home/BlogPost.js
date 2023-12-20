@@ -14,7 +14,7 @@ export default function BlogPost() {
           </div>
           <div className="container">
                <div className="row">
-                    <div className="col-sm pt-3">
+                    <div className="col-md pt-3">
                          <div className="card text-bg-dark">
                               <img src={headImage1} className="card-img img-fluid" alt="..."/>
                               <div className="card-img-overlay">
@@ -24,7 +24,7 @@ export default function BlogPost() {
                               </div>
                          </div>
                     </div>
-                    <div className="col-sm pt-3">
+                    <div className="col-md pt-3">
                          <div className="card text-bg-dark">
                               <img src={headImage2} className="card-img img-fluid" alt="..."/>
                               <div className="card-img-overlay">
@@ -37,33 +37,35 @@ export default function BlogPost() {
                </div>
 
                <div className="row mt-2">
-                    <div className="col-sm p-2">
-                         <div class="card">
-                              <img src={cardImage1} class="card-img-top" alt="..." height='250px' width='100%'/>
-                              <div class="card-body p-4">
-                                   <h5 class="card-title"><b>Surfing in maldivies</b></h5>
-                                   <p class="card-text">Unveil the secrets of the Indian Ocean's gentle giants as we explore the exhilarating world of surfing in the Maldives.</p>
-                                   <p class="card-text"><small class="text-body-secondary">Suggested - Diaries of Maldivies</small></p>
+                    <div className="col-md p-2">
+                         <div className="card">
+                              <img src={cardImage1} className="card-img-top img-fluid" alt="..." height='250px' width='100%'/>
+                              <div className="card-body p-4">
+                                   <h5 className="card-title"><b>Surfing in maldivies</b></h5>
+                                   <p className="card-text">Unveil the secrets of the Indian Ocean's gentle giants as we explore the exhilarating world of surfing in the Maldives.</p>
+                                   <p className="card-text"><small className="text-body-secondary">Suggested - Diaries of Maldivies</small></p>
                               </div>
                          </div>
                     </div>
-                    <div className="col-sm p-2">
-                         <div class="card">
-                              <img src={cardImage2} class="card-img-top" alt="..." height='250px' width='100%'/>
-                              <div class="card-body p-4">
-                                   <h5 class="card-title"><b>Beauty of God's own country - Kerala</b></h5>
-                                   <p class="card-text">Embark on a visual odyssey through the enchanting landscapes of Kerala, where nature weaves its magic in every hue and contour.</p>
-                                   <p class="card-text"><small class="text-body-secondary">Suggested - Incredible India</small></p>
+                    <div className="col-md p-2">
+                         <div className="card">
+                              <img src={cardImage2} className="card-img-top img-fluid" alt="..." height='250px' width='100%'/>
+                              <div className="card-body p-4">
+                                   <h5 className="card-title"><b>Beauty of God's own country - Kerala</b></h5>
+                                   <p className="card-text">
+                                        Embark on a visual odyssey through the enchanting landscapes of Kerala, where nature weaves its magic in every hue and contour.
+                                   </p>
+                                   <p className="card-text"><small className="text-body-secondary">Suggested - Incredible India</small></p>
                               </div>
                          </div>
                     </div>
-                    <div className="col-sm p-2">
-                         <div class="card">
-                              <img src={cardImage3} class="card-img-top" alt="..." height='250px' width='100%'/>
-                              <div class="card-body p-4">
-                                   <h5 class="card-title"><b>Enchanting Kashmir</b></h5>
-                                   <p class="card-text">Immerse yourself in the ethereal beauty of snow-capped peaks as we explore the Himalayan wonders of Gulmarg and Pahalgam.</p>
-                                   <p class="card-text"><small class="text-body-secondary">Suggested - Incredible India</small></p>
+                    <div className="col-md p-2">
+                         <div className="card">
+                              <img src={cardImage3} className="card-img-top img-fluid" alt="..." height='250px' width='100%'/>
+                              <div className="card-body p-4">
+                                   <h5 className="card-title"><b>Enchanting Kashmir</b></h5>
+                                   <p className="card-text">Immerse yourself in the ethereal beauty of snow-capped peaks as we explore the Himalayan wonders of Gulmarg and Pahalgam.</p>
+                                   <p className="card-text"><small className="text-body-secondary">Suggested - Incredible India</small></p>
                               </div>
                          </div>
                     </div>

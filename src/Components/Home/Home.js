@@ -7,14 +7,16 @@ import coverImage1 from './Images/cover-image-1.jpg';
 import coverImage2 from './Images/cover-image-2.jpg';
 import coverImage3 from './Images/cover-image-3.jpg';
 import BlogPost from './BlogPost';
+import HomeEnding from './HomeEnding';
 
 export default function Home() {
      const coverSectionItems = [
           {
+               id: 1,
                backgroundColor:'bg-secondary-subtle',
-               imageOrder: 'order-sm-1',
+               imageOrder: 'order-lg-1',
                image: coverImage1,
-               descriptionOrder: 'order-sm-2',
+               descriptionOrder: 'order-lg-2',
                heading: ['Plan Your Adventure', <br/>, 'with us'],
                description: `Embark on a journey of discovery with our unparalleled traveling site! 
                Immerse yourself in a world of wanderlust as we curate unforgettable experiences, 
@@ -27,10 +29,11 @@ export default function Home() {
                buttonTitle: 'Plan your Journey'
           },
           {
+               id: 2,
                backgroundColor:'bg-transparent',
-               imageOrder: 'order-sm-2',
+               imageOrder: 'order-lg-2',
                image: coverImage2,
-               descriptionOrder: 'order-sm-1',
+               descriptionOrder: 'order-lg-1',
                heading: ['Explore the world', <br/>, 'through Activities'],
                description: `Dive into a world of adrenaline-fueled excitement with our collection of thrilling 
                activities! Unleash your inner daredevil as we guide you through heart-pounding 
@@ -44,10 +47,11 @@ export default function Home() {
                buttonTitle: 'Explore the Adventures'
           },
           {
+               id: 3,
                backgroundColor:'bg-secondary-subtle',
-               imageOrder: 'order-sm-1',
+               imageOrder: 'order-lg-1',
                image: coverImage3,
-               descriptionOrder: 'order-sm-2',
+               descriptionOrder: 'order-lg-2',
                heading: ['Get together and', <br/>, 'make Memories'],
                description: `Create timeless moments that linger in the heart with our travel 
                experiences designed for memory-making. Immerse yourself in a symphony 
@@ -67,7 +71,8 @@ export default function Home() {
           <Intro/>
           <Whyus/>
           {coverSectionItems.map((element)=> {
-               return <Coversection
+               return <div key={element.id}>
+                    <Coversection
                     backgroundColor = {element.backgroundColor}
                     imageOrder = {element.imageOrder}
                     image = {element.image}
@@ -76,9 +81,12 @@ export default function Home() {
                     description = {element.description}
                     buttonTitle = {element.buttonTitle}
                />
+               </div>
           })}
           <BlogPost/>
           {/* <Gallery/> */}
+          <hr className='container text-secondary mt-4'/>
+          <HomeEnding/>
      </>
      )
 }
