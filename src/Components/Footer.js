@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function Footer() {
+
+     const portfolioUrl = 'https://tharunvemula-portfolio.netlify.app/';
+
      return (
      <footer className='bg-dark'>
           <div className="container pt-5">
@@ -111,7 +114,7 @@ export default function Footer() {
                               India and other countries.
                          </small>
                          <small className="text-secondary">
-                              Designed and Developed by <a href="/" className='text-secondary'><b>Tharun Vemula</b></a>
+                              Designed and Developed by <a href={portfolioUrl} target='_blank' className='text-secondary'><b>Tharun Vemula</b></a>
                          </small>
                     </div>
                </div>
