@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function Activities() {
      return (
@@ -39,7 +39,7 @@ export default function Activities() {
                </div>
                <div className="activity-card rounded mx-2">
                     <div className='rounded'>
-                         <h5><b>WHALE WATCHING</b></h5>
+                         <h5><b>WHALE <br />WATCHING</b></h5>
                          <small>
                               Embark on a maritime odyssey with whale watching, 
                               where the majestic giants of the ocean unveil their 
@@ -59,7 +59,7 @@ export default function Activities() {
                </div>
                <div className="activity-card rounded mx-2">
                     <div className='rounded'>
-                         <h5><b>ANIMAL WATCHING</b></h5>
+                         <h5><b>ANIMAL <br /> WATCHING</b></h5>
                          <small>
                          Experience the thrill of animal watching, a 
                          captivating journey of connection with 

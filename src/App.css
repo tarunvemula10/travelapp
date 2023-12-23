@@ -34,12 +34,16 @@ h2 {
 }
 .why-us small, 
 .blog-post .heading small,
-.activities .heading small {
+.activities .heading small,
+.top-picks .heading small,
+.our-list .heading small {
   letter-spacing: .5rem;
 }
 .why-us h3, 
 .blog-post h3,
-.activities .heading h3 {
+.activities .heading h3,
+.top-picks .heading h3,
+.our-list .heading h3 {
   letter-spacing: .3rem;
 }
 .blog-post .row img {
@@ -190,8 +194,10 @@ footer span:hover {
   background-color: #00000053;
   padding: 70% 0%;
   text-align: center;
+  cursor: pointer;
 }
 .activity-card div h5 {
+  color: #fff;
   letter-spacing: 4px;
 }
 .activity-card div small {
@@ -213,3 +219,9 @@ footer span:hover {
 .activity-card:nth-child(6) { background-image: url('./Components/Destinations/Images/activity-image-6.jpg'); }
 .activity-card:nth-child(7) { background-image: url('./Components/Destinations/Images/activity-image-7.jpg'); }
 .activity-card:nth-child(8) { background-image: url('./Components/Destinations/Images/activity-image-8.jpg'); }
+
+.top-picks .card .card-img-overlay,
+.our-list .card .card-img-overlay {
+  background-color: #0000003e;
+  cursor: pointer;
+}
