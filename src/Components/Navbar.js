@@ -57,7 +57,7 @@ export default function Navbar() {
                     <button className={`navbar-toggler shadow-none ${borderColor} ${textColor}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav, #book-button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={handleClick}>
                          <i className="fa-solid fa-bars"></i>
                     </button>
-                    <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <div className="collapse navbar-collapse justify-content-center w-50 m-auto" id="navbarNav">
                          <ul className="navbar-nav">
                               <li className="nav-item">
                                    <a className={`nav-link active ${textColor}`} aria-current="page" href="/">Home</a>
@@ -66,7 +66,7 @@ export default function Navbar() {
                                    <a className={`nav-link ${textColor}`} href="/">Destinations</a>
                               </li>
                               <li className="nav-item">
-                                   <a className={`nav-link ${textColor}`} href="/">Plan Your Journey</a>
+                                   <a className={`nav-link ${textColor}`} href="/">Plan Your Trip</a>
                               </li>
                               <li className="nav-item">
                                    <a className={`nav-link ${textColor}`} href="/">About Us</a>

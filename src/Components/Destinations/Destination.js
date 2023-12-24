@@ -3,6 +3,7 @@ import Carousel from './Carousel';
 import Activities from './Activities';
 import TopPicks from './TopPicks';
 import OurList from './OurList';
+import HomeEnding from '../Home/HomeEnding';
 
 export default function Destination() {
      return (
@@ -11,6 +12,7 @@ export default function Destination() {
      <TopPicks/>
      <OurList/>
      <Activities/>
+     <HomeEnding backgroundColor='bg-secondary-subtle'/>
      </>
   )
 }

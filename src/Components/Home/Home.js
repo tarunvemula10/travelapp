@@ -86,7 +86,7 @@ export default function Home() {
           <BlogPost/>
           {/* <Gallery/> */}
           <hr className='container text-secondary mt-4'/>
-          <HomeEnding/>
+          <HomeEnding backgroundColor='bg-transparent'/>
      </>
      )
 }

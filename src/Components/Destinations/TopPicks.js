@@ -10,10 +10,10 @@ export default function TopPicks() {
 
      const mostPickedPlaces = function(title, image) {
           return (
-               <div class="card text-light text-center">
-                    <img src={image} class="card-img" alt="..."/>
-                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                         <h2 class="card-title">{title}</h2>
+               <div className="card text-light text-center">
+                    <img src={image} className="card-img" alt="..."/>
+                    <div className="card-img-overlay d-flex justify-content-center align-items-center">
+                         <h2 className="card-title">{title}</h2>
                     </div>
                </div>
           );

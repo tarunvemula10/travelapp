@@ -16,7 +16,7 @@ h2 {
 }
 .intro-section {
   background: url('/src/Components/Home/Images/intro-image.jpg');
-  height: 720px;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,14 +36,16 @@ h2 {
 .blog-post .heading small,
 .activities .heading small,
 .top-picks .heading small,
-.our-list .heading small {
+.our-list .heading small,
+.trip-form .heading small {
   letter-spacing: .5rem;
 }
 .why-us h3, 
 .blog-post h3,
 .activities .heading h3,
 .top-picks .heading h3,
-.our-list .heading h3 {
+.our-list .heading h3,
+.trip-form .heading h3 {
   letter-spacing: .3rem;
 }
 .blog-post .row img {
@@ -224,4 +226,25 @@ footer span:hover {
 .our-list .card .card-img-overlay {
   background-color: #0000003e;
   cursor: pointer;
+}
+.plan-intro {
+  background-image: url('./Components/PlanYourTrip/Images/intro-image.jpg');
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.plan-intro .description {
+  background: #0000003e;
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan-intro .description p {
+  width: 80%;
+  margin: auto;
 }

@@ -1,10 +1,10 @@
-import React from 'react';
+import {React, PropTypes} from 'react';
 import endingImage1 from './Images/home-ending-1.svg';
 import endingImage2 from './Images/home-ending-2.svg';
 
-export default function HomeEnding() {
+export default function HomeEnding(props) {
      return (
-     <section className='pt-5'>
+     <section className={`pt-5 ${props.backgroundColor}`}>
           <div className="container">
                <div className="row d-flex align-items-center">
                     <div className="col-sm-3">
