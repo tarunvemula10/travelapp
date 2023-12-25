@@ -4,6 +4,7 @@ import Home from './Components/Home/Home';
 import Footer from './Components/Footer';
 import Destination from './Components/Destinations/Destination';
 import PlanYourTrip from './Components/PlanYourTrip/PlanYourTrip';
+import AboutUs from './Components/AboutUs/About'
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Navbar />
       {/* <Home/> */}
       {/* <Destination/> */}
-      <PlanYourTrip/>
+      {/* <PlanYourTrip/> */}
+      <AboutUs />
       <Footer/>
     </>
   );

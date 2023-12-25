@@ -114,7 +114,7 @@ export default function Footer() {
                               India and other countries.
                          </small>
                          <small className="text-secondary">
-                              Designed and Developed by <a href={portfolioUrl} target='_blank' className='text-secondary'><b>Tharun Vemula</b></a>
+                              Designed and Developed by <a href={portfolioUrl} target='_blank' rel="noreferrer" className='text-secondary'><b>Tharun Vemula</b></a>
                          </small>
                     </div>
                </div>
