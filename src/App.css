@@ -48,6 +48,9 @@ h2 {
 .trip-form .heading h3 {
   letter-spacing: .3rem;
 }
+.why-us .button {
+  width: 15%;
+}
 .blog-post .row img {
   width: 100%;
   min-height: 100px;

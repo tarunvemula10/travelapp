@@ -26,7 +26,8 @@ export default function Home() {
                or simply the joy of a relaxing getaway, our traveling site is your compass 
                to a world full of possibilities. Unpack inspiration, explore the extraordinary, 
                and let your wanderlust take flight!`,
-               buttonTitle: 'Plan your Journey'
+               buttonTitle: 'Plan your Journey',
+               path: '/planyourtrip'
           },
           {
                id: 2,
@@ -44,7 +45,8 @@ export default function Home() {
                guarantee an unforgettable journey for the fearless explorer in you. 
                Get ready to elevate your travel experience and make every moment 
                an adventure to remember!`,
-               buttonTitle: 'Explore the Adventures'
+               buttonTitle: 'Explore the Adventures',
+               path: '/destination'
           },
           {
                id: 3,
@@ -63,7 +65,8 @@ export default function Home() {
                is your gateway to a tapestry of moments waiting to be woven into the 
                story of a lifetime. Pack your bags and let's turn your 
                journey into a masterpiece of memories!`,
-               buttonTitle: 'Get started'
+               buttonTitle: 'Get started',
+               path: '/planyourtrip'
           }
      ]
      return (
@@ -80,6 +83,7 @@ export default function Home() {
                     heading = {element.heading}
                     description = {element.description}
                     buttonTitle = {element.buttonTitle}
+                    path = {element.path}
                />
                </div>
           })}

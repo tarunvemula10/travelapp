@@ -7,7 +7,7 @@ import cardImage3 from './Images/blog-image-card-3.jpg'
 
 export default function BlogPost() {
      return (
-     <section className='blog-post mt-5'>
+     <section className='blog-post mt-5' id='#blog'>
           <div className="container text-center p-3 heading">
                <p className='text-secondary'><small>OUR LATEST BLOG POSTS</small></p>
                <h3><b>FROM THE RESOURCE CENTER</b></h3>

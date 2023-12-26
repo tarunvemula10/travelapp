@@ -1,4 +1,5 @@
 import {React, useState} from "react";
+import {Link} from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -60,24 +61,21 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse justify-content-center w-50 mx-auto" id="navbarNav">
                          <ul className="navbar-nav">
                               <li className="nav-item">
-                                   <a className={`nav-link active ${textColor}`} aria-current="page" href="/">Home</a>
+                                   <Link className={`nav-link active ${textColor}`} aria-current="page" to="/">Home</Link>
                               </li>
                               <li className="nav-item">
-                                   <a className={`nav-link ${textColor}`} href="/">Destinations</a>
+                                   <Link className={`nav-link ${textColor}`} to="/destination">Destinations</Link>
                               </li>
                               <li className="nav-item">
-                                   <a className={`nav-link ${textColor}`} href="/">Plan Your Trip</a>
+                                   <Link className={`nav-link ${textColor}`} to="/planyourtrip">Plan Your Trip</Link>
                               </li>
                               <li className="nav-item">
-                                   <a className={`nav-link ${textColor}`} href="/">About Us</a>
-                              </li>
-                              <li className="nav-item">
-                                   <a className={`nav-link ${textColor}`} href="/">Contact Us</a>
+                                   <Link className={`nav-link ${textColor}`} to="/aboutus">About Us</Link>
                               </li>
                          </ul>
                     </div>
                     <div className="collapse navbar-collapse justify-content-end" id='book-button'>
-                         <button type="button" className={`btn ${buttonColor} border-2`}>Book your Adventure</button>
+                         <Link type="button" className={`btn ${buttonColor} border-2`} to='/planyourtrip'>Book your Adventure</Link>
                     </div>
                </div>
           </nav>

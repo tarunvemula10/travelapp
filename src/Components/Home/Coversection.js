@@ -1,4 +1,5 @@
-import {React, PropTypes} from 'react'
+import {React, PropTypes} from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Coversection(props) {
      return (
@@ -11,7 +12,7 @@ export default function Coversection(props) {
                          <div className={`col-lg ${props.descriptionOrder}`}>
                               <h1><b>{props.heading}</b></h1>
                               <p>{props.description}</p>
-                              <button type="button" className="btn btn-info text-light">{props.buttonTitle}</button>
+                              <Link type="button" className="btn btn-info text-light" to={props.path}>{props.buttonTitle}</Link>
                          </div>
                     </div>
                </div>

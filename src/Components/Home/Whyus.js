@@ -1,7 +1,8 @@
 import React from 'react'
 import cardImage1 from './Images/card-1.svg'
 import cardImage2 from './Images/card-2.svg'
-import cardImage3 from './Images/card-3.svg'
+import cardImage3 from './Images/card-3.svg';
+import {Link} from 'react-router-dom';
 
 export default function Whyus() {
      return (
@@ -41,7 +42,7 @@ export default function Whyus() {
                     </div>
                </div>
                <div className="p-3">
-                    <button className="btn btn-info text-light mx-auto d-block">Lets Plan your Trip</button>
+                    <Link className="btn btn-info text-light mx-auto d-block button" to='/planyourtrip'>Lets Plan your Trip</Link>
                </div>
           </div>
      </section>

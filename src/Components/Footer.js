@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Footer() {
 
@@ -6,7 +7,15 @@ export default function Footer() {
 
      return (
      <footer className='bg-dark'>
-          <div className="container pt-5">
+          <div className="container pt-5 pb-3 text-secondary text-center">
+               <h5>For Queries Contact us via </h5>
+               <div className="text-secondary justify-content-center align-items-center pt-2">
+                    <i className="fa-solid fa-phone"></i> : +91 123-456-7890 <span className="px-md-3"></span>
+                    <br className="d-md-none" />
+                    <i className="fa-solid fa-envelope"></i> : travelersadda23@gmail.com
+               </div>
+          </div>
+          <div className="container pt-3">
                <div className="row">
                     <div className="col-md py-2">
                          <div className='text-light'>
@@ -41,19 +50,16 @@ export default function Footer() {
                          </div>
                          <div className='pt-3'>
                               <small className='d-block py-1'>
-                                   <a href="/" className="text-secondary">Start Planning</a>
+                                   <Link to="/planyourtrip" className="text-secondary">Start Planning</Link>
                               </small>
                               <small className='d-block py-1'>
-                                   <a href="/" className="text-secondary">About us</a>
+                                   <Link to="/aboutus" className="text-secondary">About us</Link>
                               </small>
                               <small className='d-block py-1'>
-                                   <a href="/" className="text-secondary">Blog</a>
+                                   <Link to="/" className="text-secondary">Blog</Link>
                               </small>
                               <small className='d-block py-1'>
-                                   <a href="/" className="text-secondary">Reviews</a>
-                              </small>
-                              <small className='d-block py-1'>
-                                   <a href="/" className="text-secondary">Contact us</a>
+                                   <Link href="/aboutus" className="text-secondary">Reviews</Link>
                               </small>
                          </div>
                     </div>

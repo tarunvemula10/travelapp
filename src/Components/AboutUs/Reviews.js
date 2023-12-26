@@ -26,8 +26,7 @@ export default function Reviews() {
                     </div>
                </div>
           )
-     }
-
+     };
      const testimonialContents = [
           {
                id: 2,
