@@ -1,4 +1,4 @@
-import {React, PropTypes} from 'react';
+import { React } from 'react';
 import endingImage1 from './Images/home-ending-1.svg';
 import endingImage2 from './Images/home-ending-2.svg';
 import {Link} from 'react-router-dom';
