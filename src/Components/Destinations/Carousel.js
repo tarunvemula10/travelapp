@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Carousel() {
      return (
-     <section className='carousel-section'>
+     <section className='carousel-section' id='#carousel-section'>
           <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-bs-ride="carousel">
                <ul className="carousel-indicators">
                     <li type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"

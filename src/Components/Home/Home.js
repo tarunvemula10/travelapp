@@ -2,7 +2,6 @@ import React from 'react'
 import Intro from './Intro';
 import Whyus from './Whyus';
 import Coversection from './Coversection';
-// import Gallery from './Gallery';
 import coverImage1 from './Images/cover-image-1.jpg';
 import coverImage2 from './Images/cover-image-2.jpg';
 import coverImage3 from './Images/cover-image-3.jpg';
