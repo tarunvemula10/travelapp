@@ -34,9 +34,9 @@ export default function TripForm() {
                     </div>
                     <div className="pt-1">
                          <select className="form-select p-3" aria-label="Select a place" required>
-                              <option selected>~Where you want to go?~</option>
+                              <option>~Where you want to go?~</option>
                               {continents.map((continent, index)=> {
-                                   return <option value={index+1} key={continent.toString()}>{continent}</option>
+                                   return <option defaultValue={index+1} key={continent.toString()}>{continent}</option>
                               })}
                          </select>
                     </div>
@@ -61,9 +61,9 @@ export default function TripForm() {
                          </div>
                     </div>
                     <div className="pt-1">
-                         <div class="form-floating">
-                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                              <label for="floatingTextarea">Comments</label>
+                         <div className="form-floating">
+                              <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                              <label htmlFor="floatingTextarea">Comments</label>
                          </div>
                     </div>
                     <button className='btn btn-info text-light d-block mx-auto mt-3 mb-4' type="submit">Start my trip</button>
